@@ -41,7 +41,7 @@ def perform_calculations():
         annual_tax_amount = ((car_value * PERSONAL_PROPERTY_RATE)/2)
         relief_amount = 0
 
-    elif eligible_tax_relief.upper() == "Y" :
+    else:
         annual_tax_amount = ((car_value * PERSONAL_PROPERTY_RATE)/2)
         relief_amount = (car_value * PERSONAL_PROPERTY_RATE * TAX_RELIEF)
         annual_tax_amount = (annual_tax_amount - relief_amount)
